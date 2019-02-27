@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" style="-fx-background-color: #b3eaf8#b3eaf8;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayScene.GameController">
+   <top>
+      <VBox accessibleRole="TEXT" style="-fx-background-color: #cae0ee;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" style="-fx-background-color: #3b75f1;" text="MAJESTY" textFill="#f5307b">
+               <font>
+                  <Font name="Copperplate" size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <InnerShadow choke="0.09" color="#d05672" height="11.89" radius="16.83" width="57.43" />
+               </effect>
+            </Label>
+            <Label fx:id="anweisung" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" style="-fx-background-color: #a8cbf8;" text="Bitte auf Karte 2 drücken!">
+               <effect>
+                  <Blend mode="SCREEN" />
+               </effect>
+               <font>
+                  <Font name="Copperplate" size="22.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e40163" />
+                        <Stop color="#da0606" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <ImageView fx:id="stapelCard1" fitWidth="120.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapelCard2" fitWidth="120.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapelCard3" fitWidth="120.0" layoutX="210.0" layoutY="10.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapelCard4" fitWidth="120.0" layoutX="410.0" layoutY="10.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapelCard5" fitWidth="120.0" layoutX="610.0" layoutY="10.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapelCard6" fitWidth="120.0" layoutX="810.0" layoutY="10.0" onMouseClicked="#mouseEnter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="stapel" fitWidth="120.0" layoutX="1010.0" layoutY="10.0" onMouseClicked="#clickStapel" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Stapel.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="100.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0">
+               <children>
+                  <ImageView fx:id="muehle" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Muehle.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="brauerei" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Brauerei.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="hexenhaus" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Hexenhaus.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="wachturm" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Wachturm.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="kaserne" fitWidth="120.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Kaserne.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="taverne" fitWidth="120.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Taverne.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="schloss" fitWidth="120.0" layoutX="1010.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Schloss.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="lazarett" fitWidth="120.0" layoutX="1210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../locations/Lazarett.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0">
+               <children>
+                  <ImageView fx:id="cardMuellerin" cache="true" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardBrauer" cache="true" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardHexe" cache="true" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardWachen" cache="true" fitWidth="120.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardSoldat" cache="true" fitWidth="120.0" layoutX="610.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardWirt" cache="true" fitWidth="120.0" layoutX="810.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardAdlige" cache="true" fitWidth="120.0" layoutX="1010.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cardLazarett" cache="true" fitWidth="120.0" layoutX="1210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../locations/Back.png" />
+                     </image>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label fx:id="numberMuellerin1" alignment="CENTER" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberBrauer1" alignment="CENTER" layoutX="10.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberHexe1" alignment="CENTER" layoutX="44.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberWachen1" alignment="CENTER" layoutX="78.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberSoldat1" alignment="CENTER" layoutX="112.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberWirt1" alignment="CENTER" layoutX="146.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberAdlige1" alignment="CENTER" layoutX="180.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberLazarett1" alignment="CENTER" layoutX="214.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9;" text="0" textFill="#202be5">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" style="-fx-background-color: #7ccef4;">
+               <children>
+                  <Label alignment="CENTER" text="Spieler 1 : " textFill="#e82020">
+                     <HBox.margin>
+                        <Insets left="5.0" right="30.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spieler1" layoutX="10.0" layoutY="10.0" text="Name" textFill="#e82020">
+                     <HBox.margin>
+                        <Insets left="5.0" right="60.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Punkte :   " textFill="#e82020">
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="punkte1" text="0" textFill="#e82020">
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label fx:id="numberMuellerin2" alignment="CENTER" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberBrauer2" alignment="CENTER" layoutX="10.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberHexe2" alignment="CENTER" layoutX="44.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberWachen2" alignment="CENTER" layoutX="78.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberSoldat2" alignment="CENTER" layoutX="112.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberWirt2" alignment="CENTER" layoutX="146.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberAdlige2" alignment="CENTER" layoutX="180.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberLazarett2" alignment="CENTER" layoutX="214.0" layoutY="10.0" minHeight="20.0" minWidth="120.0" style="-fx-background-color: #4b99f9 #4b99f9;" text="0" textFill="#1b0be3">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Chalkduster" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="40.0" style="-fx-background-color: #7ccef4;">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="30.0" style="-fx-background-color: #7ccef4;">
+               <children>
+                  <Label alignment="CENTER" text="Spieler 2 : " textFill="#e82020">
+                     <HBox.margin>
+                        <Insets left="5.0" right="30.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spieler2" layoutX="10.0" layoutY="10.0" text="Name" textFill="#e82020">
+                     <HBox.margin>
+                        <Insets left="5.0" right="60.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Punkte :   " textFill="#e82020">
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="punkte2" text="0" textFill="#e82020">
+                     <effect>
+                        <Blend mode="HARD_LIGHT" />
+                     </effect>
+                     <font>
+                        <Font name="Copperplate" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
